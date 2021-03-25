@@ -24,7 +24,7 @@ html {
 /* Sestion 1 */
 .section-1 {
 	width: 100%;
-	height: 100vh;
+	height: 94vh;
 	background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.3));
 	background: url('../images/bg.jpg') center no-repeat;
 	background-size: cover;
@@ -119,3 +119,92 @@ html {
 	width: 130%;
 }
 /* End of Navbar */
+
+/* Section-2 */
+.section-2 {
+	width: 100%;
+	height: 100%;
+	padding: 15rem 0 10rem 0;
+	background-color: whitesmoke;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-2-heading {
+	font-size: 5rem;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	margin-bottom: 15rem;
+	border-bottom: 0.3rem solid #333;
+	text-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+
+.progress-bar-wrapper {
+	margin-bottom: 10rem;
+}
+
+.progress-bar {
+	width: 60rem;
+	height: 3rem;
+	background-color: #ccc;
+	margin: 1.5rem 0;
+	border-radius: 0.3rem;
+	box-shadow: 0.2rem 0.2rem 1rem #555;
+	position: relative;
+}
+.progress-text {
+	position: absolute;
+	left: 1rem;
+	font-size: 1.5rem;
+	color: whitesmoke;
+}
+
+.progress-text span {
+	margin: 0 0.5rem;
+	font-size: 1.8rem;
+	font-weight: 700;
+}
+
+.progress-procent {
+	width: 90%;
+	height: 100%;
+	background-color: #c44343;
+	border-radius: 0.3rem;
+}
+
+.services {
+	width: 100%;
+	height: 30vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.service {
+	text-align: center;
+}
+
+.service:first-child,
+.service:last-child {
+	align-self: flex-start;
+}
+
+.service i {
+	font-size: 10rem;
+	color: #889;
+	margin-bottom: 2rem;
+	text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+
+.service h2 {
+	font-size: 2rem;
+	color: whitesmoke;
+	background-color: #777;
+	width: 25rem;
+	letter-spacing: 0.3rem;
+	transform: skew(-10deg);
+	box-shadow: 0.2rem 0.2rem 0.5rem #555;
+}
+/* End of Section-2 */
