@@ -107,6 +107,10 @@ html {
 	transition: color 0.2;
 }
 
+.change.navbar-link {
+	color: whitesmoke;
+}
+
 .navbar-link:hover {
 	color: whitesmoke;
 }
@@ -120,6 +124,10 @@ html {
 	right: -15%;
 	bottom: -0.3rem;
 	transition: width 0.2s ease-in-out;
+}
+
+.change.navbar-link::before {
+	width: 130%;
 }
 
 .navbar-link:hover::before {
