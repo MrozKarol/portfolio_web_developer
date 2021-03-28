@@ -87,6 +87,13 @@ html {
 	background-color: #c44343;
 	display: flex;
 	box-shadow: 0.2rem 0.2rem 0.5rem #555;
+	position: absolute;
+	z-index: 30;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
 }
 
 .navbar-link {
