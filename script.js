@@ -2,6 +2,8 @@ const navbar = document.querySelector(".navbar");
 const navbarOffsetTop = navbar.offsetTop;
 const sections = document.querySelectorAll('section');
 const navbarLinks = document.querySelectorAll('.navbar-link')
+const progress = document.querySelector('.progress-bar-wrapper');
+const progressBarProcent = [96, 97, 90, 80, 60];
 
 window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset, navbar.offsetTop)
@@ -22,5 +24,14 @@ window.addEventListener('scroll', () => {
             navbarLinks[index].classList.add('change')
         }
     })
+    // DYNANAMICZNE DODANIE PROCENTÓW
+    // console.log(window.innerHeight)
+    if (window.pageYOffset + window.innerHeight >= progress.offsetTop) {
+        document.querySelectorAll('.progress-procent').forEach((element, index) => {
+            element.style.width = `${progressBarProcent[index]}%`
+            element.previousElementSibling.firstElementChild.textContent = progressBarProcent[index]
+        })
+        console.log('tttt')
+    }
 })
 
