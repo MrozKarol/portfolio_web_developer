@@ -13,7 +13,7 @@ window.addEventListener('scroll', () => {
         navbar.classList.remove('sticky')
     }
     sections.forEach((section, index) => {
-        if (window.pageYOffset >= section.offsetTop - 10) {
+        if (window.pageYOffset >= section.offsetTop + 10) {
             //usuwanie podswietlenia
             navbarLinks.forEach(navbarLinks => {
                 navbarLinks.classList.remove('change')
