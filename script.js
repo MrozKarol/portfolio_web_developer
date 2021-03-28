@@ -7,7 +7,11 @@ const progressBarProcent = [96, 97, 90, 80, 60];
 
 window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset, navbar.offsetTop)
+    mainFn()
 
+})
+
+const mainFn = () => {
     if (window.pageYOffset >= navbarOffsetTop) {
         // console.log('sticky')
         navbar.classList.add('sticky')
@@ -31,7 +35,10 @@ window.addEventListener('scroll', () => {
             element.style.width = `${progressBarProcent[index]}%`
             element.previousElementSibling.firstElementChild.textContent = progressBarProcent[index]
         })
-        console.log('tttt')
     }
-})
+}
+mainFn()
 
+window.addEventListener('resize', () => {
+    window.location.reload()
+})
