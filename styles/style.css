@@ -415,3 +415,82 @@ html {
 	text-align: center;
 }
 /* End of Section-5 Footer  */
+
+/* RWD */
+
+@media screen and (max-width: 1200px) {
+	.services {
+		height: auto;
+		flex-wrap: wrap;
+	}
+
+	.service {
+		margin: 3rem 2rem;
+	}
+
+	.section-4 {
+		height: 80vh;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.progress-bar {
+		width: 50rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.section-1-heading {
+		font-size: 4rem;
+	}
+
+	.navbar-link {
+		margin: 0 2rem;
+		font-size: 1.5rem;
+	}
+
+	.section-2 {
+		padding: 10rem;
+	}
+
+	.progress-bar {
+		width: 45rem;
+	}
+
+	.project-img {
+		width: 100%;
+	}
+
+	.contact-form {
+		width: 40rem;
+	}
+
+	.copyright {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	html {
+		font-size: 55%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	html {
+		font-size: 45%;
+	}
+
+	.section-1-heading {
+		font-size: 2.5rem;
+		margin: 0 1.5rem;
+	}
+
+	.section-2-heading {
+		text-align: center;
+	}
+
+	.progress-bar {
+		width: 40rem;
+	}
+}
