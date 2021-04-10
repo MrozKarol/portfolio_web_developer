@@ -84,7 +84,7 @@ html {
 /* Navbar */
 .navbar {
 	width: 100%;
-	height: 5vh;
+	min-height: 5vh;
 	background-color: #c44343;
 	display: flex;
 	box-shadow: 0.2rem 0.2rem 0.5rem #555;
