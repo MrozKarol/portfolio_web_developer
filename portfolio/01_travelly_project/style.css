@@ -8,6 +8,7 @@
 
 html {
 	font-size: 62.5%;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -264,6 +265,37 @@ p {
 	padding: 1rem 3rem;
 }
 
+/* End of Section Contact */
+
+/* Footer */
+
+footer {
+	color: white;
+	background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	padding: 2rem;
+	align-items: center;
+	min-height: 10vh;
+	flex-wrap: wrap;
+}
+
+footer h5 {
+	flex: 1 1 40rem;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	flex: 1 1 40rem;
+	justify-content: space-between;
+	align-items: center;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 932px) {
@@ -290,5 +322,16 @@ p {
 	.locations-head h3 {
 		background: rgba(19, 28, 39, 0.8);
 		-webkit-text-fill-color: white;
+	}
+
+	.form-wrapper {
+		width: 99%;
+	}
+	footer {
+		text-align: center;
+	}
+
+	footer h5 {
+		padding-bottom: 2rem;
 	}
 }
