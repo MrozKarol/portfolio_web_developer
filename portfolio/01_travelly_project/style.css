@@ -150,9 +150,9 @@ nav ul {
 }
 
 .moving-cloud-2 {
-	top: 20%;
+	top: 10%;
 	z-index: -1;
-	opacity: 0.5;
+	opacity: 0.4;
 }
 
 @keyframes cloudAnimation {
@@ -186,11 +186,12 @@ nav ul {
 
 .cards {
 	width: 90%;
-
+	margin: auto;
 	display: flex;
 	min-height: 70vh;
 	justify-content: center;
 	align-items: center;
+
 	flex-wrap: wrap;
 }
 
@@ -216,6 +217,53 @@ p {
 }
 
 /* End of Section Benefints */
+
+/* Section Contact */
+
+.contact {
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url('./img/contact-m.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-wrapper {
+	background: rgba(19, 28, 39, 0.7);
+	width: 60%;
+	color: white;
+	border-radius: 20px;
+}
+
+.form-head {
+	text-align: center;
+	padding: 4rem;
+}
+
+.name-form,
+.email-form {
+	padding: 3rem;
+	text-align: center;
+}
+
+.form-wrapper label {
+	margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+	width: 100%;
+	padding: 2rem;
+	margin-top: 8rem;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input {
+	padding: 1rem 3rem;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 932px) {
