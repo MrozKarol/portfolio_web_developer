@@ -299,8 +299,8 @@ html {
 
 .project-img {
 	width: 40rem;
-	object-fit: cover;
 	transition: opacity 0.3s;
+	align-self: center;
 }
 
 .project:hover .project-img {
