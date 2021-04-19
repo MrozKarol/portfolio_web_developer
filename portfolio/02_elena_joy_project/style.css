@@ -66,13 +66,14 @@ ul {
 
 a {
 	text-decoration: none;
+	color: var(--gray-text);
 }
 
 .flex {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
 }
 
 body {
@@ -130,6 +131,7 @@ nav {
 
 .hero-introduction p {
 	padding: 5rem 5rem;
+	color: var(--gray-text);
 }
 
 .hero-introduction h2 {
@@ -202,6 +204,59 @@ nav {
 
 /* End of Hero section */
 
+/* Section about */
+
+.about {
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-image {
+	flex: 1 1 40rem;
+	position: relative;
+}
+
+.about-image h5 {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -10%);
+	letter-spacing: 2rem;
+	color: white;
+	text-decoration: underline;
+}
+.about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.about-text {
+	color: white;
+	background: var(--background-color);
+	flex: 2 1 40rem;
+	justify-content: space-around;
+}
+
+.about-text p {
+	color: white;
+}
+
+.about-text h3 {
+	padding: 2rem 0rem;
+	font-family: 'Ruhl Medium';
+}
+
+.about-text h2 {
+	font-family: 'GreatVibes';
+	padding: 4rem;
+}
+
+.about-text div {
+	padding: 3rem 10rem;
+}
+
 /* Media Screen RWD */
 
 @media screen and (max-width: 842px) {
@@ -222,6 +277,7 @@ nav {
 	}
 	.burger {
 		position: relative;
+		cursor: pointer;
 	}
 
 	.burger span {
@@ -249,7 +305,7 @@ nav {
 		align-items: center;
 		transition: transform 1s ease;
 	}
-
+	/* burger styles */
 	.nav-open {
 		transform: translateX(-100%);
 		background: gray;
@@ -267,5 +323,11 @@ nav {
 	.toggle .line3 {
 		transform: rotateZ(-45deg) translateY(-300%);
 		background: white;
+	}
+	/* end burger styles */
+
+	/* Abaut section */
+	.about-text div {
+		padding: 3rem 3rem;
 	}
 }
