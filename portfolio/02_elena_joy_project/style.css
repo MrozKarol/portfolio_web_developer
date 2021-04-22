@@ -27,7 +27,7 @@ html {
 	--header3: calc(3rem + 1vw);
 	--header4: calc(2.4rem + 1vw);
 	--text: calc(1.5rem + 1vw);
-	--big: calc(2.4rem + 1vw);
+	--big: calc(5.5rem + 1vw);
 	--special-color: #906272;
 	--background-color: #414141;
 	--gray-text: #525252;
@@ -291,6 +291,73 @@ nav {
 	padding: 10rem;
 	text-align: center;
 	opacity: 0.6;
+}
+
+/* End section gellery */
+
+/* section contact */
+
+.contact {
+	min-height: 90vh;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form-wrapper {
+	flex: 3 1 40rem;
+}
+
+.form-wrapper span {
+	font-size: var(--big);
+	color: var(--special-color);
+	text-decoration: underline;
+}
+
+.form-wrapper label {
+	display: block;
+}
+
+.form-wrapper input {
+	display: block;
+	margin: 3rem 0rem;
+	background: var(--background-color);
+	color: wheat;
+	border: none;
+	padding: 1rem;
+}
+
+.form-wrapper button {
+	padding: 1rem 8rem;
+	background: var(--special-color);
+	color: white;
+	border: none;
+	width: 100%;
+}
+
+.contact img {
+	flex: 1 1 40rem;
+	/* width: 100%;
+	height: 100%;
+	object-fit: cover; */
+}
+
+footer {
+	background: var(--background-color);
+	color: white;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 3rem 5%;
+	align-items: center;
+}
+
+footer h4 {
+	flex: 3 1 40rem;
+}
+
+footer ul {
+	flex: 1 1 40rem;
+	display: flex;
+	justify-content: space-around;
 }
 
 /* Media Screen RWD */
