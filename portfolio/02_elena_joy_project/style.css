@@ -307,6 +307,10 @@ nav {
 	flex: 3 1 40rem;
 }
 
+.form-wrapper h2 {
+	margin: 5rem 0 0rem;
+}
+
 .form-wrapper span {
 	font-size: var(--big);
 	color: var(--special-color);
@@ -445,5 +449,32 @@ footer ul {
 	}
 	.gellery-head {
 		display: none;
+	}
+
+	.contact {
+		position: relative;
+		z-index: 1;
+	}
+
+	.form-wrapper h2 {
+		background: rgba(233, 231, 231, 0.5);
+	}
+
+	.contact img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		z-index: -3;
+	}
+}
+
+@media screen and (min-width: 1700px) {
+	html {
+		--header1: 3rem;
+		--header2: 5.4rem;
+		--header3: 3.5rem;
+		--header4: 2.5rem;
+		--big: 6rem;
 	}
 }
