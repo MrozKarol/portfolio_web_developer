@@ -506,4 +506,39 @@ html {
 		margin: 0 0.7rem;
 	}
 }
+
+@media screen and (min-width: 1970px) {
+	.gallery-link {
+		width: 54rem;
+		height: 36rem;
+		margin: 5rem;
+	}
+
+	.food-img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.navbar-link i {
+		font-size: 4rem;
+	}
+
+	.navbar-link span {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 2660px) {
+	.gallery-link {
+		width: 87rem;
+		height: 60rem;
+		margin: 5rem;
+	}
+
+	.food-img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
 /* End of Responsive */
