@@ -10,14 +10,103 @@
 	font-family: 'Baloo Da 2', cursive;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap');
+
 html {
 	font-size: 62.5%;
 }
 
-.conteiner {
+/* Navbar  */
+.navbar {
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	z-index: 14;
+	padding: 3rem;
+}
+
+.logo {
+	position: absolute;
+	top: 0.5rem;
+	left: 4rem;
+}
+
+.logo a {
+	font-family: 'Russo One', sans-serif;
+	font-size: 4.5rem;
+	color: #eee;
+	letter-spacing: 0.1rem;
+}
+
+.logo span {
+	font-family: 'Russo One', sans-serif;
+	font-size: 5.5rem;
+	font-weight: bold;
+	color: #9b0e0e;
+}
+
+.nav-list {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-30%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-link {
+	font-family: 'Russo One', sans-serif;
+	font-size: 4rem;
+	font-weight: bold;
+	letter-spacing: 0.3rem;
+	color: #eee;
+	margin: 2rem 0;
+	transition: color 0.4s;
+}
+
+.nav-link:hover {
+	color: #9b0e0e;
+}
+/* end of Navar */
+
+/* Menu */
+.menu {
+	width: 4rem;
+	height: 4rem;
+	position: fixed;
+	z-index: 100;
+	top: 3rem;
+	right: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	cursor: pointer;
+}
+
+.line {
+	width: 100%;
+	height: 0.2rem;
+	background: #eee;
+}
+
+.line-1 {
+	width: 50%;
+}
+
+.line-3 {
+	width: 50%;
+	margin-left: auto;
+}
+
+/* end of Menu  */
+
+/* .conteiner {
 	max-width: 2400px;
 	margin: 0 auto;
-}
+} */
 
 /* Section 1 */
 .section-1 {
