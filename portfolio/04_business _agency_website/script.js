@@ -43,5 +43,24 @@ video.addEventListener('timeupdate', () => {
         video.style.opacity = '.3s'
     }
 })
+// end of section 2 video
 
-// end of section 2 video 
+// section 3 pricing cards
+var swiper = new Swiper('.swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 70,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+});
+
+// end of section 3 pricing cards 
