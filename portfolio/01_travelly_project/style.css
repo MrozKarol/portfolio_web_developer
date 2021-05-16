@@ -134,9 +134,6 @@ nav ul {
 }
 .locations-head h3 {
 	padding: 4rem 0rem;
-	background: linear-gradient(#131c27, #663b34);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 .claud {
 	position: absolute;
