@@ -20,8 +20,7 @@ body {
 }
 
 .bg {
-	background: url('https://images.unsplash.com/photo-1524234107056-1c1f48f64ab8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1267&q=80')
-		no-repeat center center/cover;
+	background: url('./img/bcg.jpg') no-repeat center center/cover;
 
 	position: absolute;
 	top: -30px;
@@ -34,4 +33,19 @@ body {
 
 .loading-text {
 	color: #fff;
+}
+
+.btn {
+	padding: 0.2rem 0.4rem;
+	background: #9b4048;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: background 0.5s ease-in-out;
+	border-radius: 0.2rem;
+	text-transform: uppercase;
+	opacity: 0.6;
+}
+.btn:hover {
+	background: #9e1010;
 }

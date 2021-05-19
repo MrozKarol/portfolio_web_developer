@@ -1,5 +1,6 @@
 const loadText = document.querySelector('.loading-text')
 const bg = document.querySelector('.bg')
+const btn = document.querySelector('.btn')
 
 let load = 0
 
@@ -12,6 +13,7 @@ const blurring = () => {
     loadText.textContent = `${load}%`
     loadText.style.opacity = scale(load, 0, 100, 1, 0)
     bg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+    btn.style.opacity = (scale(load, 0, 100, 0, 1))
 
 
 }

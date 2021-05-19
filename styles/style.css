@@ -298,7 +298,7 @@ html {
 }
 
 .project-img {
-	width: 40rem;
+	width: 41rem;
 	transition: opacity 0.3s;
 	align-self: center;
 }
@@ -492,5 +492,10 @@ html {
 
 	.progress-bar {
 		width: 40rem;
+	}
+	.project-text .project-name,
+	.project-text,
+	.project-technologies {
+		font-size: 2rem;
 	}
 }
