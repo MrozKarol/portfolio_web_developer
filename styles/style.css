@@ -247,13 +247,45 @@ html {
 	text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+.btn-wrapper {
+	width: 80%;
+	height: 20rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 2rem;
+}
+
+.section-3-btn {
+	width: 25rem;
+	height: 7rem;
+	font-size: 1.7rem;
+	font-weight: 700;
+	color: #333;
+	background-color: whitesmoke;
+	border: 0.3rem solid #333;
+	padding: 0.5rem 1rem;
+	letter-spacing: 0.3rem;
+	cursor: pointer;
+}
+.btn-web {
+	opacity: 0.5;
+}
+
+.btn-js {
+	opacity: 0.5;
+}
+
+.active-btn {
+	opacity: 1;
+}
+
 .projects-wrapeer {
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .project {
-	flex: 1 1 1 2rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -264,6 +296,26 @@ html {
 	position: relative;
 	overflow: hidden;
 	transition: box-shadow 0.5s;
+	transition: transform 1s;
+	transform: scale(1);
+}
+
+.project-web.deactivated {
+	transition: all 1s 1s;
+}
+
+.project-js.deactivated {
+	transition: all 1s;
+}
+
+.deactivated {
+	opacity: 0;
+	transform: scale(0);
+	visibility: hidden;
+}
+
+.ded {
+	display: none;
 }
 
 .project:hover {

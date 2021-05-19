@@ -4,6 +4,10 @@ const sections = document.querySelectorAll('section');
 const navbarLinks = document.querySelectorAll('.navbar-link')
 const progress = document.querySelector('.progress-bar-wrapper');
 const progressBarProcent = [96, 97, 90, 80, 50, 80, 85, 77];
+const btnWeb = document.querySelector('.btn-web')
+const btnJs = document.querySelector('.btn-js')
+const webProject = document.querySelectorAll('.project-web')
+const jsProject = document.querySelectorAll('.project-js')
 
 window.addEventListener('scroll', () => {
     // console.log(window.pageYOffset, navbar.offsetTop)
@@ -41,4 +45,30 @@ mainFn()
 
 window.addEventListener('resize', () => {
     window.location.reload();
+})
+
+
+btnWeb.addEventListener('click', () => {
+    btnWeb.classList.toggle('active-btn')
+    webProject.forEach(project => {
+        project.classList.toggle('deactivated')
+    })
+    setTimeout(() => {
+        webProject.forEach(project => {
+            project.classList.toggle('ded')
+        })
+    }, 1200)
+})
+
+btnJs.addEventListener('click', () => {
+    btnJs.classList.toggle('active-btn')
+    jsProject.forEach(project => {
+        project.classList.toggle('deactivated')
+    })
+    setTimeout(() => {
+        jsProject.forEach(project => {
+            project.classList.toggle('ded')
+        })
+    }, 1200)
+
 })
