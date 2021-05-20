@@ -6,15 +6,52 @@
 }
 
 html {
-	font-size: calc(62.5% + 2vw);
+	font-size: calc(62.5% + 1vw);
 }
 
 body {
+	background: #d3dfc8;
 	font-family: 'Lato', sans-serif;
-	height: 100vh;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+h1 {
+	margin: 10px;
+}
+
+.conteiner {
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
+	text-align: center;
+	overflow-x: hidden;
+}
+
+.box {
+	background: rgb(98, 198, 245);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20rem;
+	height: 10rem;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+	transform: translateX(400%);
+	transition: transform 0.6s ease;
 	overflow: hidden;
+}
+
+h2 {
+	color: rgb(76, 68, 68);
+}
+
+.box:nth-last-of-type(even) {
+	transform: translateX(-400%);
+}
+
+.box.show {
+	transform: translateX(0);
 }
