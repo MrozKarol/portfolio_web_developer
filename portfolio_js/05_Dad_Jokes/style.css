@@ -38,9 +38,9 @@ h3 {
 
 .joke {
 	letter-spacing: 0.1rem;
-	line-height: 0.1rem;
 	margin: 5rem auto;
-	max-width: 30rem;
+	max-width: 50rem;
+	line-height: 1.2rem;
 }
 
 .btn {
@@ -58,4 +58,11 @@ h3 {
 }
 .btn:focus {
 	outline: 0;
+}
+
+@media screen and (max-width: 850px) {
+	.conteiner {
+		padding: 2rem 1rem;
+		width: 25rem;
+	}
 }
