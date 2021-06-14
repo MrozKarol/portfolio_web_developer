@@ -43,6 +43,7 @@ header {
 
 .main {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 }
 
@@ -84,7 +85,7 @@ header {
 .movie-info span.green {
 	color: lightgreen;
 }
-.movie-info span.orangr {
+.movie-info span.orange {
 	color: lightsalmon;
 }
 .movie-info span.red {
