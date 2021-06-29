@@ -19,6 +19,9 @@ nav {
 		@include flex(space-around, center, row);
 		flex: 1 1 40rem;
 	}
+	nav a {
+		color: red;
+	}
 }
 
 .intro {
@@ -59,4 +62,50 @@ nav {
 .intro-text,
 .intro-images {
 	flex: 1 1 40rem;
+}
+
+#plant-left {
+	animation: plant 1.5s ease infinite alternate;
+}
+
+#plant-right {
+	animation: plant 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+	animation: me 3s ease infinite alternate;
+	transform-origin: bottom;
+}
+
+#clock-arrow {
+	animation: clock 4s infinite linear alternate;
+	transform-box: fill-box;
+	transform-origin: bottom;
+}
+
+@keyframes me {
+	from {
+		transform: rotateZ(-5deg);
+	}
+	to {
+		transform: rotateZ(6deg);
+	}
+}
+
+@keyframes plant {
+	from {
+		transform: translateY(0%);
+	}
+	to {
+		transform: translateY(-30%);
+	}
+}
+
+@keyframes clock {
+	from {
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
 }
