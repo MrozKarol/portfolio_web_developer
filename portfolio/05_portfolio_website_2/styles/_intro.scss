@@ -19,9 +19,6 @@ nav {
 		@include flex(space-around, center, row);
 		flex: 1 1 40rem;
 	}
-	nav a {
-		color: red;
-	}
 }
 
 .intro {
