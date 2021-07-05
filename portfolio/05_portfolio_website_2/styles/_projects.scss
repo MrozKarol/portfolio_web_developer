@@ -1,32 +1,3 @@
-// .projects {
-// 	width: 90%;
-// 	margin: auto;
-// 	min-height: 90vh;
-// 	text-align: center;
-// 	display: grid;
-// 	grid-gap: 3rem;
-// 	grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-// 	grid-template-rows: auto;
-// 	h2 {
-// 		font-size: $header2;
-// 		margin: 3rem;
-// 	}
-// }
-
-// .project {
-// 	opacity: 0.8;
-// 	margin: 4rem 0 4rem 0;
-// 	img {
-// 		width: 100%;
-// 		object-fit: cover;
-// 	}
-// 	transition: opacity 0.3s ease-in;
-// }
-
-// .project:hover {
-// 	opacity: 1;
-// }
-
 .projects {
 	width: 100%;
 	height: 100%;
@@ -103,10 +74,6 @@
 	transition: box-shadow 0.5s;
 	transition: transform 1s;
 	transform: scale(1);
-	img {
-		width: 100%;
-		object-fit: cover;
-	}
 }
 
 .project-web.deactivated {
@@ -149,19 +116,20 @@
 .project-name {
 	font-size: 3rem;
 	font-weight: 700;
-	color: #333;
+	color: rgb(17, 128, 45);
 	text-transform: capitalize;
 }
 
 .project-technologies {
 	font-size: 1.8rem;
-	color: #c44343;
+	color: $gray-text;
 }
 
 .project-img {
-	width: 41rem;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	transition: opacity 0.3s;
-	align-self: center;
 }
 
 .project:hover .project-img {
@@ -173,7 +141,7 @@
 	font-weight: 500;
 	color: #333;
 	letter-spacing: 0.1rem;
-	border: 0.3rem solid #c44343;
+	border: 0.3rem solid $gray-text;
 	padding: 0 1rem;
 	background-color: whitesmoke;
 	position: absolute;

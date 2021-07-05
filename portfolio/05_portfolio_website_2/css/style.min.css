@@ -321,10 +321,6 @@ nav {
   transition: transform 1s, -webkit-transform 1s;
   -webkit-transform: scale(1);
           transform: scale(1); }
-  .project img {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
 
 .project-web.deactivated {
   -webkit-transition: all 1s 1s;
@@ -365,20 +361,20 @@ nav {
 .project-name {
   font-size: 3rem;
   font-weight: 700;
-  color: #333;
+  color: #11802d;
   text-transform: capitalize; }
 
 .project-technologies {
   font-size: 1.8rem;
-  color: #c44343; }
+  color: #2c2c2c; }
 
 .project-img {
-  width: 41rem;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center; }
+  transition: opacity 0.3s; }
 
 .project:hover .project-img {
   opacity: 0.2; }
@@ -388,7 +384,7 @@ nav {
   font-weight: 500;
   color: #333;
   letter-spacing: 0.1rem;
-  border: 0.3rem solid #c44343;
+  border: 0.3rem solid #2c2c2c;
   padding: 0 1rem;
   background-color: whitesmoke;
   position: absolute;
@@ -475,14 +471,33 @@ nav {
   .project {
     margin: 0.5rem; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .projects-wrapeer {
     grid-gap: 0.6rem;
-    -ms-grid-columns: (minmax(15rem, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr)); }
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); }
     .projects-wrapeer h2 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin: 1rem; }
+  .project-link {
+    font-size: 2.9rem;
+    font-weight: 500; }
+  .project:hover .project-text {
+    top: 2rem;
+    -webkit-transition: top 0.3s 0.3s;
+    transition: top 0.3s 0.3s; }
+  .project:hover .project-link {
+    bottom: 3rem;
+    -webkit-transition: bottom 0.3s 0.3s;
+    transition: bottom 0.3s 0.3s; } }
+
+@media screen and (max-width: 500px) {
+  .project-link {
+    font-size: 2.5rem; }
   .project {
-    margin: 0.3rem; } }
+    margin: 0.3rem; }
+  .project-text .project-name,
+  .project-text,
+  .project-technologies {
+    font-size: 2rem; } }
 /*# sourceMappingURL=style.min.css.map */

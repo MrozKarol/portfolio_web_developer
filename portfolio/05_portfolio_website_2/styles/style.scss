@@ -88,17 +88,41 @@ $gray-text: #2c2c2c;
 	}
 }
 
-@media screen and(max-width:500px) {
+@media screen and(max-width:600px) {
 	.projects-wrapeer {
 		grid-gap: 0.6rem;
-		grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+		grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
 
 		h2 {
-			font-size: $header3;
+			font-size: $header4;
 			margin: 1rem;
 		}
 	}
+	.project-link {
+		font-size: 2.9rem;
+		font-weight: 500;
+	}
+	.project:hover .project-text {
+		top: 2rem;
+		transition: top 0.3s 0.3s;
+	}
+	.project:hover .project-link {
+		bottom: 3rem;
+		transition: bottom 0.3s 0.3s;
+	}
+}
+
+@media screen and(max-width:500px) {
+	.project-link {
+		font-size: 2.5rem;
+	}
+
 	.project {
 		margin: 0.3rem;
+	}
+	.project-text .project-name,
+	.project-text,
+	.project-technologies {
+		font-size: 2rem;
 	}
 }
