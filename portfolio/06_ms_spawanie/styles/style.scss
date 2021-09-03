@@ -16,7 +16,7 @@ html {
 .navbar {
   width: 100%;
   height: 12rem;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(27, 27, 27);
   position: fixed;
   top: -12rem;
   z-index: 14;
@@ -151,3 +151,59 @@ html {
 }
 
 /* end of Menu  */
+
+.section-1 {
+  width: 100%;
+  height: 50vh;
+  background: url("https://images.unsplash.com/photo-1607723619497-98a79f01ba90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1532&q=80");
+}
+
+/* section 2  */
+.section-2 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #222020;
+  position: absolute;
+}
+
+.section-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.offers-conteiner {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.offer-box {
+  width: 60rem;
+  height: 50rem;
+  margin-top: 1rem;
+  background: rgb(250, 242, 242);
+  box-shadow: rgba(250, 242, 242, 0.12) 0 0.2rem 0.4rem 0rem,
+    rgba(250, 242, 242, 0.32) 0rem 0.2rem 0.16rem 0rem;
+}
+
+.offer-heading {
+  margin: 1rem;
+  padding-left: 5%;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.offer-list {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+}
+
+/* end of section 2  */
