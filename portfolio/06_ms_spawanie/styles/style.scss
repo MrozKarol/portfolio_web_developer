@@ -161,8 +161,8 @@ html {
 /* section 2  */
 .section-2 {
   width: 100%;
-  min-height: 100vh;
-  background-color: #222020;
+  min-height: auto;
+  background-color: #161718;
   position: absolute;
 }
 
@@ -174,36 +174,70 @@ html {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .offers-conteiner {
   width: 100%;
-  margin-top: 10rem;
+  margin-bottom: 10rem;
   display: flex;
   justify-content: space-around;
+  align-items: space-between;
   flex-wrap: wrap;
 }
 
 .offer-box {
-  width: 60rem;
+  width: 61rem;
   height: 50rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
   background: rgb(250, 242, 242);
-  box-shadow: rgba(250, 242, 242, 0.12) 0 0.2rem 0.4rem 0rem,
-    rgba(250, 242, 242, 0.32) 0rem 0.2rem 0.16rem 0rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.color-bar {
+  height: 2rem;
 }
 
 .offer-heading {
-  margin: 1rem;
-  padding-left: 5%;
+  height: 5rem;
+  padding-left: 2%;
   font-family: "Poppins", sans-serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: whitesmoke;
 }
 
-.offer-list {
+.offer-item {
+  padding-left: 1%;
+  padding-top: 1rem;
+  list-style-position: inside;
+  list-style-type: circle !important;
+}
+
+.offer-list,
+.offer-paragrpaph {
   font-family: "Lato", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
+.offer-paragrpaph {
+  padding: 1rem;
+  line-height: 3rem;
+}
+
+.one {
+  background: linear-gradient(to right, #087285, #0da5d3);
+}
+.two {
+  background: linear-gradient(to right, #946809, #bdba0e);
+}
+.three {
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+}
 /* end of section 2  */
