@@ -360,8 +360,7 @@ html {
 .section-2 {
   width: 100%;
   min-height: auto;
-  background-color: #161718;
-  position: absolute; }
+  background-color: #161718; }
 
 .section-heading {
   font-family: "Poppins", sans-serif;
@@ -371,12 +370,11 @@ html {
   text-align: center;
   font-weight: 500;
   letter-spacing: 0.2rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
+  padding-top: 4rem; }
 
 .offers-conteiner {
   width: 100%;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +391,7 @@ html {
   height: 50rem;
   margin-top: 2rem;
   border-radius: 1rem;
-  background: #faf2f2;
+  background: #b3b3b3;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,15 +434,75 @@ html {
 
 .one {
   background: -webkit-gradient(linear, left top, right top, from(#087285), to(#0da5d3));
-  background: linear-gradient(to right, #087285, #0da5d3); }
+  background: linear-gradient(to right, #087285, #0da5d3);
+  -webkit-box-shadow: 0px 1px 15px -2px #ffffff;
+          box-shadow: 0px 1px 15px -2px #ffffff; }
 
 .two {
   background: -webkit-gradient(linear, left top, right top, from(#946809), to(#bdba0e));
-  background: linear-gradient(to right, #946809, #bdba0e); }
+  background: linear-gradient(to right, #946809, #bdba0e);
+  -webkit-box-shadow: 0px 1px 15px -2px #ffffff;
+          box-shadow: 0px 1px 15px -2px #ffffff; }
 
 .three {
   background: -webkit-gradient(linear, left top, right top, from(#a10c14), to(#e23b3b));
-  background: linear-gradient(to right, #a10c14, #e23b3b); }
+  background: linear-gradient(to right, #a10c14, #e23b3b);
+  -webkit-box-shadow: 0px 1px 15px -2px #ffffff;
+          box-shadow: 0px 1px 15px -2px #ffffff; }
 
 /* end of section 2  */
+.section-3 {
+  width: 100%;
+  background: #161718;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10rem; }
+
+.contact-wrapper {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.contact-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 8rem; }
+
+.contact-details div {
+  width: 25rem;
+  text-align: center;
+  margin: 4rem; }
+
+.contact-details i {
+  font-size: 5rem;
+  color: #7a1010; }
+
+.contact-details h3 {
+  font-family: "Russo One", sans-serif;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  color: #ccc; }
+
+.contact-details p {
+  font-size: 1.6rem;
+  color: #eee; }
+
+/* end of section 4 */
 /*# sourceMappingURL=style.min.css.map */
