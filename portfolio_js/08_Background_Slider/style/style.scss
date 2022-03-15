@@ -75,3 +75,18 @@ body::before {
 .right-arrow {
   right: calc(15vw - 65px);
 }
+
+@media screen and (max-width: 500px) {
+  .slider-conteiner {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 65vh;
+    width: 65vw;
+  }
+  .left-arrow {
+    left: calc(18vw - 65px);
+  }
+
+  .right-arrow {
+    right: calc(18vw - 65px);
+  }
+}
