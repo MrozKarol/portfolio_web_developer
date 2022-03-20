@@ -87,8 +87,8 @@ body {
   width: 3px;
   -webkit-transform-origin: bottom center;
           transform-origin: bottom center;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in-out infinite;
+  transition: all 0.5s ease-in-out infinite;
 }
 
 .nedle.hour {
@@ -97,14 +97,14 @@ body {
 }
 
 .nedle.minute {
-  -webkit-transform: translate(-50%, -100%) rotate(5deg);
-          transform: translate(-50%, -100%) rotate(5deg);
+  -webkit-transform: translate(-50%, -100%) rotate(0deg);
+          transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
 }
 
 .nedle.second {
-  -webkit-transform: translate(-50%, -100%) rotate(10deg);
-          transform: translate(-50%, -100%) rotate(10deg);
+  -webkit-transform: translate(-50%, -100%) rotate();
+          transform: translate(-50%, -100%) rotate();
   height: 100px;
   background-color: #e74c3e;
 }
