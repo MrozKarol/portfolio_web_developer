@@ -333,7 +333,6 @@ html {
 
 .projects-wrapeer {
   width: 100%;
-  height: 100%;
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
@@ -342,8 +341,6 @@ html {
 }
 
 .project {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,13 +373,13 @@ html {
 }
 
 .project.project-web.deactivated {
-  -webkit-transition: all ease-in 1s 1s;
-  transition: all ease-in 1s 1s;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
 }
 
 .project.project-js.deactivated {
-  -webkit-transition: all ease-in 1s 1s;
-  transition: all ease-in 1s 1s;
+  -webkit-transition: all 1s 1s;
+  transition: all 1s 1s;
 }
 
 .deactivated {
