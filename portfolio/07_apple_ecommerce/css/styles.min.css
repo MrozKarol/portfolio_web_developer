@@ -94,10 +94,10 @@ html {
   background-color: red;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-transform: rotateY(91deg);
-          transform: rotateY(91deg);
   position: relative;
   top: -2rem;
+  -webkit-transform: transform 0.5s;
+          transform: transform 0.5s;
 }
 
 .front-side,

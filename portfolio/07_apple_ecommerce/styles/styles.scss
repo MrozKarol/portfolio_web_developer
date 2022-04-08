@@ -83,9 +83,10 @@ html {
   height: 50rem;
   background-color: red;
   transform-style: preserve-3d;
-  transform: rotateY(91deg);
+  // transform: rotateY(91deg);
   position: relative;
   top: -2rem;
+  transform: transform 0.5s;
 }
 
 .front-side,
