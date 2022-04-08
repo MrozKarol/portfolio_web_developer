@@ -34,7 +34,7 @@ html {
 
 .section-1 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,10 +94,14 @@ html {
   background-color: red;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(20deg) rotateZ(0);
+          transform: rotateX(0) rotateY(20deg) rotateZ(0);
   position: relative;
   top: -2rem;
-  -webkit-transform: transform 0.5s;
-          transform: transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .front-side,

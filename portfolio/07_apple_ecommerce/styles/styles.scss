@@ -31,7 +31,7 @@ html {
 // Section-1
 .section-1 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
@@ -83,10 +83,10 @@ html {
   height: 50rem;
   background-color: red;
   transform-style: preserve-3d;
-  // transform: rotateY(91deg);
+  transform: rotateX(0) rotateY(20deg) rotateZ(0);
   position: relative;
   top: -2rem;
-  transform: transform 0.5s;
+  transition: transform 0.5s;
 }
 
 .front-side,
