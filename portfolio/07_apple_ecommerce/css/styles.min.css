@@ -378,14 +378,36 @@ html {
 }
 
 .section-2-heading {
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 200;
   color: var(--black-color);
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.section-2-heading::before {
+  content: '';
+  width: 130%;
+  height: 50vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--primary-color)), to(var(--white-color)));
+  background-image: linear-gradient(var(--primary-color), var(--white-color));
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: skewX(-50deg);
+          transform: skewX(-50deg);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  z-index: -1;
+  border-radius: 1rem;
 }
 
 .iphones {
   height: 60vh;
-  width: 50vh;
+  width: 50vw;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--primary-color)), to(var(--white-color)));
+  background-image: linear-gradient(var(--primary-color), var(--white-color));
+  border-radius: 0.5rem;
 }
 
 .iphones img {
@@ -394,9 +416,23 @@ html {
   -o-object-fit: contain;
      object-fit: contain;
   position: absolute;
+  -webkit-transition: opacity 3s;
+  transition: opacity 3s;
 }
 
-.iphones-btns {
+.iphone-img-2 {
+  opacity: 0;
+}
+
+.iphones:hover .iphone-img-1 {
+  opacity: 0;
+}
+
+.iphones:hover .iphone-img-2 {
+  opacity: 1;
+}
+
+.iphone-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,12 +441,43 @@ html {
 .iphone-btn {
   width: 6rem;
   height: 6rem;
-  background-color: linear-gradient(to left, #333333 60%, #525252);
-  margin: 0 5rem;
-  border: 50%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(60%, #333333), to(#525252));
+  background-image: linear-gradient(to right, #333333 60%, #525252);
+  margin: 0 3rem;
+  border-radius: 50%;
+  position: relative;
+}
+
+.iphone-btn::after {
+  content: '';
+  width: 50%;
+  height: 50%;
+  display: block;
+  border: 0.1rem solid #6edea6;
+  border-radius: 1rem;
 }
 
 .iphone-btn span {
-  display: none;
+  position: absolute;
+  top: -3rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: 0.1rem;
+  letter-spacing: 0.1rem;
+  color: var(--primary-color);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.iphone-btn:hover span {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=styles.min.css.map */
