@@ -34,7 +34,7 @@ html {
 
 .section-1 {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--primary-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -640,7 +640,7 @@ html {
 }
 
 .section-4 {
-  height: 120vh;
+  height: 140vh;
   padding: 20vh 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -660,6 +660,11 @@ html {
   position: absolute;
 }
 
+.watch-bands {
+  -webkit-transition: margin-right 1s;
+  transition: margin-right 1s;
+}
+
 .watch-band-img {
   width: 35rem;
   height: 35rem;
@@ -672,6 +677,8 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-transition: margin-top 1s;
+  transition: margin-top 1s;
 }
 
 .watch-case-img {
@@ -687,6 +694,11 @@ html {
   height: 4rem;
   background-color: rgba(221, 221, 221, 0.4);
   border-radius: 5rem;
+}
+
+.hideControl {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .watch-control i {
