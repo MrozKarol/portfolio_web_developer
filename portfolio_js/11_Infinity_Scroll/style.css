@@ -8,4 +8,51 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Bebas Neue', sans-serif;
+  background: whitesmoke;
+}
+
+/* Tilte */
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 40px;
+  letter-spacing: 4.5px;
+}
+
+/* Loader */
+
+.loader{
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(225, 225, 2225, 0.8);
+}
+
+.loader img{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%,50%);
+}
+
+.image-conteiner {
+  margin: 10px 30%;
+}
+
+.image-conteiner img {
+  width: 100%;
+  margin-top: 5px;
+}
+
+/* Media Query */
+
+@media screen and (max-width:600px) {
+  .h1{
+    font-size: 20px;
+  }
+  .image-conteiner{
+    margin: 10px;
+  }
 }
