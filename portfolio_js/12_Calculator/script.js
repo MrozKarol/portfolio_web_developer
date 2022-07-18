@@ -9,6 +9,12 @@ function sendNumberValue(number) {
     dispalyValue === '0' ? number : dispalyValue + number;
 }
 
+function addDecimal() {
+  if (!calculatorDisplay.textContent.includes('.')) {
+    calculatorDisplay.textContent = `${calculatorDisplay.textContent}.`;
+  }
+}
+
 // Add Eevent Liseners for numbers, operators, decimal buttons
 inputBtns.forEach((inputBtn) => {
   if (inputBtn.classList.length === 0) {
@@ -16,7 +22,7 @@ inputBtns.forEach((inputBtn) => {
   } else if (inputBtn.classList.contains('operator')) {
     inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
   } else if (inputBtn.classList.contains('decimal')) {
-    inputBtn.addEventListener('click', () => sendNumberValue(inputBtn.value));
+    inputBtn.addEventListener('click', () => addDecimal());
   }
 });
 
