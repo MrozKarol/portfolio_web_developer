@@ -354,7 +354,6 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
   background-color: white;
   -webkit-box-shadow: 0.3rem 0.3rem 0.5rem #777;
           box-shadow: 0.3rem 0.3rem 0.5rem #777;
@@ -434,9 +433,6 @@ html {
      object-fit: cover;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
 }
 
 .project:hover .project-img {
@@ -602,6 +598,11 @@ html {
   }
   .progress-bar {
     width: 45rem;
+  }
+  .projects-wrapeer {
+    grid-gap: 1rem;
+    -ms-grid-columns: (minmax(28rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   }
   .project-img {
     width: 100%;

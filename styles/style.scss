@@ -296,7 +296,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem;
   background-color: white;
   box-shadow: 0.3rem 0.3rem 0.5rem #777;
   position: relative;
@@ -360,7 +359,6 @@ html {
   height: 100%;
   object-fit: cover;
   transition: opacity 0.3s;
-  align-self: center;
 }
 
 .project:hover .project-img {
@@ -515,6 +513,10 @@ html {
 
   .progress-bar {
     width: 45rem;
+  }
+  .projects-wrapeer {
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   }
 
   .project-img {
