@@ -1,4 +1,5 @@
-b
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 
 html {
   box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
   overflow-y: hidden;
   display: flex;
   align-items: center;
+  font-family: 'Lato', sans-serif;
 
 }
 
@@ -19,7 +21,7 @@ body {
   right: 0;
   bottom: 0;
   width: 100vw;
-  height: 100vh;
+  height: auto;
 
 }
 
@@ -79,6 +81,7 @@ label {
 }
 
 input {
+  font-family: 'Lato', sans-serif;
   width: 95%;
   margin-bottom: 10px;
   padding: 10px;
@@ -97,10 +100,14 @@ button {
   margin-top: 15px;
   border: none;
   text-transform: uppercase;
-  background: #006959;
+  background: #045e50;
   color: white;
   cursor: pointer;
   outline: none;
+}
+
+button:hover{
+  filter: brightness(110%);
 }
 
 
@@ -111,7 +118,7 @@ ul {
 }
 
 li {
-
+  display: inline-block;
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -128,6 +135,31 @@ li span {
 .complete {
   position: relative;
   top: 60px;
+}
+
+.complete-title{
+  animation: complite 4s infinite;
+
+}
+
+@keyframes complite {
+  0%{
+    color: rgb(255, 33, 33);
+  }
+  25%{
+    color: rgb(176, 176, 0);
+  }
+  50%{
+    color: rgb(15, 149, 0);
+    transform: scale(1.5);
+  }
+  75%{
+    color: rgb(33, 63, 255);
+  }
+  100%{
+    color: rgb(255, 33, 251);
+  }
+  
 }
 
 
