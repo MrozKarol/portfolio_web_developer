@@ -56,10 +56,15 @@ function updateCountdown(e) {
   countdownTitle = e.srcElement[0].value;
   counntdownDate = e.srcElement[1].value;
   console.log(counntdownDate, countdownTitle);
-  //   Get number version of current Date,updateDOM
-  countdownValue = new Date(counntdownDate).getTime();
-  console.log(countdownValue);
-  updateDOM();
+  // Check for valid date
+  if (counntdownDate === '') {
+    alert('Please select a date for the countown');
+  } else {
+    //   Get number version of current Date,updateDOM
+    countdownValue = new Date(counntdownDate).getTime();
+    console.log(countdownValue);
+    updateDOM();
+  }
 }
 
 // Reset All Values
