@@ -162,6 +162,29 @@ li span {
   
 }
 
+/* Media Query: Medium Smartphone (Vertical) */
+
+@media screen and (max-width: 760px) {
+  .container {
+    min-width: unset;
+    width: 95vw;
+    min-height: 245px;
+    padding: 20px;
+    margin: 10px;
+  }
+
+  li span {
+    display: block;
+    font-size: 65px;
+    text-align: center;
+  }
+
+}
+
+
+
+
+
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
@@ -211,5 +234,21 @@ li span {
 
   li span {
     font-size: 40px;
+  }
+}
+
+
+@media screen and (max-width: 405px){
+
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  li{
+    text-align: center;
+  }
+  li span {
+    text-align: center;
+    font-size: 24px;
   }
 }
