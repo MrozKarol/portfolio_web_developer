@@ -319,6 +319,7 @@ html {
   font-weight: 500;
   letter-spacing: 0.2rem;
   padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 .offers-conteiner {
   width: 100%;
@@ -376,12 +377,14 @@ html {
   width: 100%;
   position: relative;
   background: #161718;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
 
 .contact-wrapper {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .contact-wrapper div {
@@ -409,13 +412,135 @@ html {
 
 /* end of section 4 */
 
+@media screen and (max-width: 1200px) {
+  .banner-heading span {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-heading span {
+    font-size: 3.5rem;
+  }
+  .nav-list {
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+  }
+  @keyframes animateHeading {
+    0% {
+      transform: translateZ(4rem);
+      opacity: 0;
+      letter-spacing: 1.5rem;
+    }
+
+    3% {
+      transform: translateZ(0rem);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+
+    25% {
+      transform: translateZ(0rem);
+      opacity: 1;
+      letter-spacing: 1.5rem;
+    }
+    28% {
+      transform: translateZ(4rem);
+      opacity: 0;
+      letter-spacing: 1.5rem;
+    }
+
+    100% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 3rem;
+    }
+  }
+}
+
 @media screen and (max-width: 850px) {
   .offers-conteiner {
     grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   }
 }
+@media screen and (max-width: 600px) {
+  .banner-heading span {
+    font-size: 3.5rem;
+  }
+  @keyframes animateHeading {
+    0% {
+      transform: translateZ(4rem);
+      opacity: 0;
+      letter-spacing: 1.5rem;
+    }
+
+    3% {
+      transform: translateZ(0rem);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+
+    25% {
+      transform: translateZ(0rem);
+      opacity: 1;
+      letter-spacing: 1.5rem;
+    }
+    28% {
+      transform: translateZ(4rem);
+      opacity: 0;
+      letter-spacing: 1.5rem;
+    }
+
+    100% {
+      transform: translateZ(8rem);
+      opacity: 0;
+      letter-spacing: 3rem;
+    }
+  }
+}
 
 @media screen and (max-width: 550px) {
+  .banner-heading span {
+    font-size: 3.2rem;
+  }
+  .banner-paragraph {
+    width: 50%;
+  }
+
+  @keyframes animateHeading {
+    0% {
+      transform: translateZ(3rem);
+      opacity: 0;
+      letter-spacing: 1.5rem;
+    }
+
+    3% {
+      transform: translateZ(0rem);
+      opacity: 1;
+      letter-spacing: 1rem;
+    }
+
+    25% {
+      transform: translateZ(0rem);
+      opacity: 1;
+      letter-spacing: 1.5rem;
+    }
+    28% {
+      transform: translateZ(3rem);
+      opacity: 0;
+      letter-spacing: 1.5rem;
+    }
+
+    100% {
+      transform: translateZ(4rem);
+      opacity: 0;
+      letter-spacing: 3rem;
+    }
+  }
+  .banner-btn {
+    width: 20rem;
+  }
   .offers-conteiner {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
