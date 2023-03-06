@@ -159,7 +159,97 @@ canvas#canvas {
 }
 
 /* Media Query: Mobile Devices */
-@media screen and (max-width: 800px) {
+
+/* @media screen and (max-width: 980px) {
+  .top-bar {
+    padding-left: 15px;
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+  
+  }
+
+  .active-tool,.tool{
+    position: relative;
+  }
+
+  canvas#canvas {
+    background-color: rgb(177, 177, 177);
+    position: absolute;
+    top: 150px;
+    cursor: crosshair;
+    z-index: 10;
+  }
+  
+
+
+  }
+
+  @media screen and (max-width: 450px) {
+    .top-bar {
+      padding-left: 15px;
+      height: 200px;
+      width: 100%;
+      position: fixed;
+      background-color: grey;
+      display: flex;
+      justify-content: left;
+     flex-direction: row;
+     flex-wrap: wrap;
+    
+    }
+  
+    canvas#canvas {
+      background-color: rgb(177, 177, 177);
+      position: absolute;
+      top: 200px;
+      cursor: crosshair;
+      z-index: 10;
+    }
+    
+  
+  
+    }
+    @media screen and (max-width: 395px) {
+      .top-bar {
+        padding-left: 15px;
+        height: 200px;
+        width: 100%;
+        position: fixed;
+        background-color: grey;
+        display: flex;
+        justify-content: left;
+       flex-direction: row;
+       flex-wrap: wrap;
+      
+      }
+
+      .fas{
+        font-size: 20px;
+      }
+    
+      canvas#canvas {
+        background-color: rgb(177, 177, 177);
+        position: absolute;
+        top: 200px;
+        cursor: crosshair;
+        z-index: 10;
+      }
+      
+    
+    
+      }
+   */
+
+
+
+
+@media screen and (max-width: 950px) {
   .mobile-message {
     position: absolute;
     height: 100vh;
@@ -172,4 +262,4 @@ canvas#canvas {
     text-align: center;
     z-index: 100;
   }
-}
+} 
