@@ -1,11 +1,11 @@
-const API_URL = `https://api.themoviedb.org/3/discover/movie/?sort_by=populaty.desc&api_key=86f7c78abc5fc2a1971ef902c51140da&page=${Math.floor(
+const API_URL = `https://api.themoviedb.org/3/discover/movie?sort_by=populaty.desc&api_key=86f7c78abc5fc2a1971ef902c51140da&page=${Math.floor(
   Math.random() * 40 + 1
 )}`;
 
 const IMG_PATH = 'https://image.tmdb.org/t/p/w500';
 
 const SEARCH_API =
-  'https://api.themoviedb.org/3/search?movie?api_key=86f7c78abc5fc2a1971ef902c51140da&query=';
+  'https://api.themoviedb.org/3/search/movie?api_key=86f7c78abc5fc2a1971ef902c51140da&query=';
 
 const form = document.getElementById('form');
 
@@ -56,7 +56,7 @@ const getClassByRate = (vote_average) => {
 const getMovies = () => {
   const config = {
     headers: {
-      'Content-Type': 'application/json;charset=utf-8',
+      'Content-Type': 'application?json;charset=utf-8',
     },
   };
 
